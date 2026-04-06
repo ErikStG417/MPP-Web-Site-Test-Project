@@ -9,10 +9,7 @@ header {
   width: 100%;
 }
 
-footer {
-  padding: 10px 0;
-  width: 100%;
-}
+
 
 .main-nav {
   background-color: #333;
@@ -162,22 +159,22 @@ footer {
 
 
 
- .main-about-content {
+/*  .main-about-content {
   width: 100%;
   padding: 0;
   margin: 2px;
   min-height: calc(100vh - 120px);
   box-sizing: border-box;
-}
+} */
 
-.story-section {
+/* .story-section {
   box-sizing: border-box;
   background-color: rgba(100, 100, 100, 0.5);
   text-align: center;
   padding-top: 0;
   padding-bottom: 20px;
   margin: 0;
-}
+} */
 
 .team-section {
   background-color: rgba(100, 100, 100, 0.5);
@@ -189,17 +186,41 @@ footer {
 
 .story-content {
   padding: 20px;
-
   height: 100%;
   text-align: center;
 }
 
+.story-content h2 {
+  color: black;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.story-content p {
+  color: black;
+  font-size: 1.2em;
+}
+
  .team-content {
   padding: 20px;
-
   height: 100%;
   text-align: center;
 } 
+
+team-content p {
+  color: black;
+  font-size: 1.2em;
+}
+
+.team-content h2 {
+  color: black;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 @media (max-width: 768px) {
   .main-content {
@@ -222,6 +243,6 @@ footer {
   #scatter img,
   #scatter h2 {
     grid-column: 1 / -1;
-    grid-row: auto;
+    grid-row: auto; 
   }
-}
+} 
