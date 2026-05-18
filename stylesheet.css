@@ -506,7 +506,7 @@ img {
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
-  border-radius: 6px;
+    border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   background: rgba(255, 255, 255, 0.04);
   color: #fff;
@@ -569,7 +569,7 @@ img {
 
   .nav-menu {
     position: fixed;
-    top: 84px;
+    top: 56px;
     right: 16px;
     background: rgba(4, 6, 10, 0.98);
     padding: 12px;
@@ -592,11 +592,11 @@ img {
   .nav-toggle {
     display: block;
     font-size: 1.75rem;           /* Larger icon */
-  padding: 8px 12px;            /* Clickable area */
-  background: rgba(94, 86, 255, 0.2);  /* Subtle background */
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
-  z-index: 100;
+    padding: 8px 12px;
+    background: rgba(94, 86, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    z-index: 100;
   }
 
   .mid-row {
@@ -656,6 +656,11 @@ img {
 
 /* Tablets (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
+  .main-nav {
+    position: sticky;
+    top: 56px;
+    z-index: 40;
+  }
   .title {
     font-size: 1.5rem;
     padding-right: 50px;
