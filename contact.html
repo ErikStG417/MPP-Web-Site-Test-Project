@@ -1,52 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Medicocre Poet Productions</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mediocre Poet Productions</title>
+  <link rel="stylesheet" href="stylesheet.css" />
   </head>
-  <body>
-    <header>
-      <h1>Contact Medicocre Poet Productions</h1>
-    </header>
-    <nav>
-      <ul aria-label="About navigation" class="about-nav">
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="title">Mediocre Poet Productions</h1> <button class="nav-toggle" aria-controls="primary-menu"
+        aria-expanded="false" aria-label="Toggle navigation"> ☰ </button>
+    </div>
+  </header>
+  <nav aria-label="Contact navigation" class="main-nav" id="site-nav">
+    <div class="nav-inner">
+      <ul id="primary-menu" class="nav-menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-    <main>
-      <section>
-        <h2>Get in Touch</h2>
-        <p>
-          If you have any questions, comments, or inquiries, please feel free to
-          reach out to us using the contact information below:
-        </p>
-        <ul>
-          <li>
-            Email:
-            <a href="mailto:contact@medicocrepoetproductions.com"
-              >contact@medicocrepoetproductions.com</a
-            >
-          </li>
-          <li>
-            Phone:
-            <a href="tel:+1234567890">+1 (234) 567-890</a>
-          </li>
-          <li>
-            Address:
-            <p>123 Creative Street, Imaginary City, IC 12345</p>
-          </li>
-        </ul>
-        <p>We look forward to hearing from you!</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2026 Medicocre Poet Productions. All rights reserved.</p>
-    </footer>
+  </div>
+</nav>
+<main class="contact-main">
+  <section class="contact-grid">
+    <div class="contact-card">
+      <h2>Contact Info</h2>
+      <p><strong>Email:</strong> —</p>
+      <p><strong>Phone:</strong> —</p>
+      <p><strong>Address:</strong> —</p>
+      <p><strong>Social:</strong> —</p>
+    </div>
 
-    <script src="script.js" defer></script>
+    <form class="contact-form" action="#" method="post" aria-label="Contact form">
+      <h2>Send a message</h2>
+      <label>
+        Name
+        <input type="text" name="name" placeholder="—" />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" placeholder="—" />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="6" placeholder="—"></textarea>
+      </label>
+
+      <button type="submit" class="btn" disabled>Send (coming soon)</button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Mediocre Poet Productions. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js" defer></script>
   </body>
 </html>

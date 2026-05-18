@@ -1,47 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Page</title>
-    <link rel="stylesheet" href="stylesheet.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="title">Welcome to the Medicocre Poet Productions Page</h1>
-    </header>
-    <nav aria-label="Main navigation" class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-container">
-      <div class="container">
-        <main class="main-content">
-          <section class="intro">
-            <h2>Mediocre Poet Productions News</h2>
-            <p>This is the main content area of the page.</p>
-          </section>
-          <section class="featured-image">
-            <img src="img/feather-logo.png" alt="MPP logo" />
-          </section>
-          <section class="secondary">
-            <h2>Latest Release</h2>
-            <p>Stay tuned for more updates!</p>
-          </section>
-          <section class="shows">
-            <h2>Upcoming Shows</h2>
-            <p>Check out our upcoming shows and events!</p>
-          </section>
-        </main>
-      </div>
-    </div>
-    <footer class="copyright">
-      <p>&copy; 2020 Medicocre Poet Productions. All rights reserved.</p>
-    </footer>
 
-    <script src="scripts.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main Page</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="title">Mediocre Poet Productions</h1> <button class="nav-toggle" aria-controls="primary-menu"
+        aria-expanded="false" aria-label="Toggle navigation"> ☰ </button>
+    </div>
+  </header>
+    <nav aria-label="Main navigation" class="main-nav" id="site-nav">
+      <div class="nav-inner">
+        <ul id="primary-menu" class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+  </div>
+</nav>
+<main class="page-main">
+  <section class="main-news" aria-labelledby="news-heading">
+    <h2 id="news-heading">Main News</h2>
+    <p>Latest headline or lead story goes here. Keep it short and engaging.</p>
+  </section>
+<section class="mid-row">
+  <div class="logo-block" aria-hidden="false">
+    <img src="img/feather-logo.png" alt="MPP logo" class="primary-logo" />
+  </div>
+
+  <aside class="latest-updates" aria-labelledby="updates-heading">
+    <h3 id="updates-heading">Latest Updates</h3>
+    <ul>
+      <li>Update item one — short description.</li>
+      <li>Update item two — short description.</li>
+      <li>Update item three — short description.</li>
+    </ul>
+  </aside>
+</section>
+<section class="upcoming-shows" aria-labelledby="shows-heading">
+  <h3 id="shows-heading">Upcoming Shows</h3>
+  <p>Placeholder for the shows list. Add date, venue, and ticket link when available.</p>
+</section>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Mediocre Poet Productions. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js" defer></script>
   </body>
 </html>
