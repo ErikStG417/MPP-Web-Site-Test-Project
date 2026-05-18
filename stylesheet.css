@@ -97,6 +97,7 @@ img {
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 100;
 }
 
 /* Desktop menu - centered */
@@ -547,6 +548,9 @@ img {
 
 /* Mobile responsive - Small phones (320px - 480px) */
 @media (max-width: 480px) {
+  .header-inner {
+    padding: 16px;
+  }
   .title {
     font-size: 1.3rem;
   }
@@ -575,6 +579,12 @@ img {
 
   .nav-toggle {
     display: block;
+    font-size: 1.75rem;           /* Larger icon */
+  padding: 8px 12px;            /* Clickable area */
+  background: rgba(94, 86, 255, 0.2);  /* Subtle background */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  z-index: 100;
   }
 
   .mid-row {
