@@ -568,8 +568,8 @@ img {
   }
 
   .nav-menu {
-    position: sticky;
-    top: 84px;
+    position: fixed;
+    top: 64px;
     right: 16px;
     background: rgba(7, 10, 18, 0.98);
     padding: 12px;
