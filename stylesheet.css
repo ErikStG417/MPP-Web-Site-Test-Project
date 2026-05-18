@@ -553,7 +553,7 @@ img {
 @media (max-width: 480px) {
   
   .main-nav {
-    position: sticky;
+    position: fixed;
     top: 56px;
     z-index: 40;
   }
