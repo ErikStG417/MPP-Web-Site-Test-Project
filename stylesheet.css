@@ -29,6 +29,9 @@ img {
 .site-header {
   background: #071126;
   color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 41;
 }
 
 .header-inner {
@@ -548,7 +551,13 @@ img {
 
 /* Mobile responsive - Small phones (320px - 480px) */
 @media (max-width: 480px) {
-  .header-inner {
+  
+  .main-nav {
+    position: sticky;
+    top: 56px;
+    z-index: 40;
+  }
+.header-inner {
     padding: 16px;
   }
   .title {
