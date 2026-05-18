@@ -53,6 +53,9 @@ img {
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
 }
 
 .main-nav {
@@ -178,6 +181,15 @@ img {
   animation: fadeOut 0.5s ease-in-out forwards;
 }
 
+/* Marquee animation for title */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -565,6 +577,9 @@ img {
   .title {
     font-size: 1.3rem;
     padding-right: 60px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 8s linear infinite;
   }
 
   .nav-menu {
@@ -664,6 +679,9 @@ img {
   .title {
     font-size: 1.5rem;
     padding-right: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
   }
 
   .nav-menu {
