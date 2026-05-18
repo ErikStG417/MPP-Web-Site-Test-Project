@@ -53,8 +53,11 @@ img {
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
-  display: inline-block;
+  display: flex;
   white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+  max-width: 100%;
   animation: marquee 12s linear infinite;
 }
 
@@ -187,7 +190,7 @@ img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 @keyframes fadeIn {
@@ -577,9 +580,20 @@ img {
   .title {
     font-size: 1.3rem;
     padding-right: 60px;
-    display: inline-block;
+    display: flex;
     white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+  max-width: 100%;
     animation: marquee 8s linear infinite;
+  overflow: hidden;
+  flex: 1;
+  max-width: 100%;
+  }
+
+.marquee-text {
+    flex-shrink: 0;
+    margin-right: 1rem;
   }
 
   .nav-menu {
@@ -679,9 +693,15 @@ img {
   .title {
     font-size: 1.5rem;
     padding-right: 50px;
-    display: inline-block;
+    display: flex;
     white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+  max-width: 100%;
     animation: marquee 10s linear infinite;
+  overflow: hidden;
+  flex: 1;
+  max-width: 100%;
   }
 
   .nav-menu {
