@@ -553,7 +553,7 @@ img {
 @media (max-width: 480px) {
   
   .main-nav {
-    position: fixed;
+    position: sticky;
     top: 56px;
     z-index: 40;
   }
@@ -568,7 +568,7 @@ img {
   }
 
   .nav-menu {
-    position: sticky;
+    position: fixed;
     top: 64px;
     right: 16px;
     background: rgba(7, 10, 18, 0.98);
