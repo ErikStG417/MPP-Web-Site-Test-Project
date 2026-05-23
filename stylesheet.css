@@ -42,7 +42,9 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
+  
 }
+
 
 .title {
   margin: 0;
@@ -54,12 +56,14 @@ img {
   color: #fff;
   text-transform: uppercase;
   display: flex;
-  white-space: nowrap;
-  overflow: hidden;
   flex: 1;
   max-width: 100%;
-  animation: marquee 12s linear infinite;
+  animation: marquee 12s linear infinite, inFade 12s linear infinite;
 }
+
+
+  
+
 
 .main-nav {
   background: rgba(10, 10, 10, 0.85);
@@ -187,12 +191,54 @@ img {
 /* Marquee animation for title */
 @keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translateX(20%);
+  }
+  50% {
+    transform: translateX(-70%);
+  }
+  60% {
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(20%);
   }
 }
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    transform: translateX();
+  }
+}
+
+@keyframes inFade {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1
+  }
+  40% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity:1; 
+  }
+}
+
+
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -585,7 +631,7 @@ img {
   overflow: hidden;
   flex: 1;
   max-width: 100%;
-    animation: marquee 8s linear infinite;
+    
   overflow: hidden;
   flex: 1;
   max-width: 100%;
@@ -698,7 +744,7 @@ img {
   overflow: hidden;
   flex: 1;
   max-width: 100%;
-    animation: marquee 10s linear infinite;
+    
   overflow: hidden;
   flex: 1;
   max-width: 100%;
