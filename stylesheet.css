@@ -55,10 +55,9 @@ img {
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
-  display: flex;
-  flex: 1;
-  max-width: 100%;
-  animation: marquee 12s linear infinite, inFade 12s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+  animation: marqueeScroll 15s linear infinite;
 }
 
 
@@ -189,53 +188,17 @@ img {
 }
 
 /* Marquee animation for title */
-@keyframes marquee {
+@keyframes marqueeScroll {
   0% {
-    transform: translateX(20%);
-  }
-  50% {
-    transform: translateX(-70%);
-  }
-  60% {
-    transform: translateX(100%);
+    transform: translateX(110%);
   }
   100% {
-    transform: translateX(20%);
+    transform: translateX(-110%);
   }
 }
 
-@keyframes marquee2 {
-  0% {
-    transform: translateX();
-  }
-  100% {
-    transform: translateX();
-  }
-}
 
-@keyframes inFade {
-  0% {
-    opacity: 1;
-  }
-  10% {
-    opacity: 1
-  }
-  40% {
-    opacity: 1
-  }
-  50% {
-    opacity: 0;
-  }
-  65% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity:1; 
-  }
-}
+
 
 
 
